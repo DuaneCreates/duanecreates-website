@@ -23,6 +23,16 @@ module.exports = {
       'error',
       { vars: 'all', args: 'none', ignoreRestSiblings: false },
     ],
+    'comma-dangle': [
+      'error',
+      {
+        arrays: 'always-multiline',
+        objects: 'always-multiline',
+        imports: 'always-multiline',
+        exports: 'always-multiline',
+        functions: 'always-multiline',
+      },
+    ],
     'comma-style': ['error', 'last'],
     'comma-spacing': ['error', { before: false, after: true }],
     'no-ternary': 'off',
