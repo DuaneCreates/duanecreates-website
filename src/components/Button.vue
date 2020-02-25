@@ -1,5 +1,5 @@
 <template>
-  <button type="submit" :type="type">{{ text }}</button>
+  <button :type="type">{{ text }}</button>
 </template>
 
 <script>
