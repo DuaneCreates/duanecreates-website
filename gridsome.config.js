@@ -5,6 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const tailwindcss = require('tailwindcss');
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
   siteName: 'Duane Creates',
@@ -12,7 +13,7 @@ module.exports = {
   css: {
     loaderOptions: {
       postcss: {
-        plugins: [tailwindcss],
+        plugins: [tailwindcss, autoprefixer],
       },
     },
   },
