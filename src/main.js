@@ -11,9 +11,15 @@ import Vuelidate from 'vuelidate';
 // Icons
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import {
+  faInstagram,
+  faTwitter,
+  faGithub,
+  faYoutube,
+} from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
-library.add(faChevronRight);
+library.add(faChevronRight, faInstagram, faTwitter, faGithub, faYoutube);
 
 export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component

@@ -26,7 +26,11 @@ section.about {
   @apply bg-grey-light pt-50;
 
   .sections {
-    @apply flex flex-col;
+    @apply flex flex-col px-0;
+
+    @screen laptop{
+      @apply px-50;
+    }
 
     & > section {
       @apply w-full p-50;
