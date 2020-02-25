@@ -6,8 +6,19 @@ import '~/assets/tailwind.css';
 import '~/assets/base.scss';
 import '~/assets/global.scss';
 import DefaultLayout from '~/layouts/Default.vue';
+import Vuelidate from 'vuelidate';
+
+// Icons
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
+library.add(faChevronRight);
 
 export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout);
+  Vue.component('font-awesome-icon', FontAwesomeIcon);
+
+  Vue.use(Vuelidate);
 }
