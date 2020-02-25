@@ -6,8 +6,8 @@ module.exports = {
       desktop: '1280px',
     },
     fontFamily: {
-      title: [],
-      body: [],
+      title: ['Montserrat', 'sans-serif'],
+      body: ['Raleway', 'sans-serif'],
     },
     fontSize: {
       sm: '0.875rem', // 14px

@@ -33,7 +33,7 @@ section.me {
         content: '';
         transition: all 0.2s;
         z-index: -1;
-        height: 14px;
+        height: 12px;
         bottom: 6px;
 
         left: -2%;
@@ -67,13 +67,19 @@ section.me {
     }
 
     svg {
-      @apply text-lg ml-5;
+      @apply text-lg ml-5 relative;
       margin-bottom: -2px;
+      left: 0;
+      transition: left 0.2s;
     }
 
     &:focus,
     &:hover {
       @apply text-primary;
+
+      svg {
+        left: 0.25em;
+      }
     }
   }
 }

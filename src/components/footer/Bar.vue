@@ -28,14 +28,14 @@ export default {
 section.bar {
   @apply bg-white flex flex-col px-50 py-20;
 
-  @screen laptop{
+  @screen laptop {
     @apply flex-row justify-between items-center px-100;
   }
 
   p.copyright {
     @apply text-sm text-primary-dark font-normal mt-20;
 
-    @screen laptop{
+    @screen laptop {
       @apply mt-0;
     }
   }
@@ -43,14 +43,14 @@ section.bar {
   .social-links {
     @apply flex flex-row -mx-10;
 
-    @screen desktop{
+    @screen desktop {
       @apply -mx-16;
     }
 
     a {
       @apply mx-10;
 
-      @screen desktop{
+      @screen desktop {
         @apply mx-16;
       }
 
@@ -59,8 +59,8 @@ section.bar {
         transition: all 0.2s;
       }
 
-      &:hover{
-        svg{
+      &:hover {
+        svg {
           @apply text-primary;
         }
       }

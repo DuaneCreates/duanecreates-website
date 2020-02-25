@@ -45,7 +45,7 @@ section.journey {
         @apply absolute text-primary text-xl opacity-0;
         content: '\2022';
         left: -0.9em;
-        top: -0.41em;
+        top: -0.31em;
         transition: all 0.2s;
       }
     }
@@ -61,7 +61,7 @@ section.journey {
 
         &:before {
           @apply opacity-100;
-          left: -0.6em;
+          left: -0.5em;
         }
       }
     }

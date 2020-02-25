@@ -21,14 +21,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/*TODO line height, font*/
 section.about {
   @apply bg-grey-light pt-50;
 
   .sections {
     @apply flex flex-col px-0;
 
-    @screen laptop{
+    @screen laptop {
       @apply px-50;
     }
 

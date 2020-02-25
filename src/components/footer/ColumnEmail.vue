@@ -1,5 +1,6 @@
 <template>
   <section class="email">
+    <h3>Let's discuss something</h3>
     <a href="mailto:duanecreates@gmail.com" class="message">
       <p class="title">Send me a message</p>
       <p class="email">duanecreates@gmail.com</p>
@@ -96,7 +97,7 @@ section.email {
         @apply absolute text-primary text-xl opacity-0;
         content: '\2022';
         left: -0.9em;
-        top: -0.41em;
+        top: -0.31em;
         transition: all 0.2s;
       }
     }
@@ -112,7 +113,7 @@ section.email {
 
         &:before {
           @apply opacity-100;
-          left: -0.6em;
+          left: -0.5em;
         }
       }
     }
