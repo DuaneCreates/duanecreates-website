@@ -9,7 +9,6 @@
 </template>
 
 <script>
-import { required, email } from 'vuelidate/lib/validators';
 import ColumnJourney from './ColumnJourney';
 import ColumnSummary from './ColumnSummary';
 import ColumnEmail from './ColumnEmail';
