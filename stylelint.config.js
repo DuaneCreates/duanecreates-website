@@ -4,13 +4,13 @@ module.exports = {
     'at-rule-no-unknown': [
       true,
       {
-        ignoreAtRules: ['tailwind'],
+        ignoreAtRules: ['tailwind', 'screen'],
       },
     ],
     'scss/at-rule-no-unknown': [
       true,
       {
-        ignoreAtRules: ['tailwind'],
+        ignoreAtRules: ['tailwind', 'screen'],
       },
     ],
     'color-no-invalid-hex': true,
