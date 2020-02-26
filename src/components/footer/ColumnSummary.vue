@@ -75,7 +75,7 @@ section.me {
 
     &:focus,
     &:hover {
-      @apply text-primary;
+      @apply outline-none text-primary;
 
       svg {
         left: 0.25em;

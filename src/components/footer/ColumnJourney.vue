@@ -56,6 +56,7 @@ section.journey {
 
     &:hover,
     &:focus {
+      @apply outline-none;
       p.social {
         @apply text-primary;
 

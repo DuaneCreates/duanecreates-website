@@ -27,8 +27,7 @@ button {
   transition: all 0.2s;
 
   &:hover,
-  &:focus,
-  &:active {
+  &:focus {
     @apply outline-none bg-primary shadow-md;
   }
 }

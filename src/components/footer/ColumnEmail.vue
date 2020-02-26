@@ -108,6 +108,7 @@ section.email {
 
     &:hover,
     &:focus {
+      @apply outline-none;
       p.title {
         @apply text-primary;
 

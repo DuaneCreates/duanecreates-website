@@ -64,6 +64,7 @@ section.bar {
 
       &:hover,
       &:focus {
+        @apply outline-none;
         top: -0.25em;
         margin-bottom: -0.25em;
 
