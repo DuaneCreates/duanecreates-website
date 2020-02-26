@@ -28,14 +28,14 @@ export default {
 section.bar {
   @apply bg-white flex flex-col px-50 py-20;
 
-  @screen laptop {
+  @screen tablet-lg {
     @apply flex-row justify-between items-center px-100;
   }
 
   p.copyright {
-    @apply text-sm text-primary-dark font-normal mt-20;
+    @apply text-sm text-primary-dark font-normal mt-20 font-title;
 
-    @screen laptop {
+    @screen tablet-lg {
       @apply mt-0;
     }
   }
@@ -43,8 +43,8 @@ section.bar {
   .social-links {
     @apply flex flex-row -mx-10;
 
-    @screen desktop {
-      @apply -mx-16;
+    @screen laptop {
+      @apply -mx-15;
     }
 
     a {
@@ -53,8 +53,8 @@ section.bar {
       margin-bottom: 0;
       transition: all 0.2s;
 
-      @screen desktop {
-        @apply mx-16;
+      @screen laptop {
+        @apply mx-15;
       }
 
       svg {

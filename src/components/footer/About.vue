@@ -26,7 +26,7 @@ section.about {
   .sections {
     @apply flex flex-col px-0;
 
-    @screen laptop {
+    @screen tablet-lg {
       @apply px-50;
     }
 
@@ -34,7 +34,7 @@ section.about {
       @apply w-full p-50;
     }
 
-    @screen laptop {
+    @screen tablet-lg {
       @apply flex-row flex-wrap;
 
       & > section {
@@ -42,7 +42,7 @@ section.about {
       }
     }
 
-    @screen desktop {
+    @screen laptop {
       & > section {
         @apply w-1/3;
       }

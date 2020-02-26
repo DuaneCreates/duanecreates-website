@@ -2,8 +2,10 @@ module.exports = {
   theme: {
     screens: {
       tablet: '640px',
-      laptop: '1024px',
-      desktop: '1280px',
+      'tablet-md': '768px',
+      'tablet-lg': '1024px',
+      laptop: '1280px',
+      desktop: '1500px',
     },
     fontFamily: {
       title: ['Montserrat', 'sans-serif'],
@@ -31,9 +33,11 @@ module.exports = {
       '0': '0',
       '5': '.313em',
       '10': '.625em',
+      '15': '.938em',
       '16': '1em',
       '20': '1.250em',
       '24': '1.5em',
+      '25': '1.563em',
       '30': '1.875em',
       '50': '3.125em',
       '100': '6.25em',
