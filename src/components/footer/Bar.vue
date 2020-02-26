@@ -48,7 +48,10 @@ section.bar {
     }
 
     a {
-      @apply mx-10;
+      @apply mx-10 relative;
+      top: 0;
+      margin-bottom: 0;
+      transition: all 0.2s;
 
       @screen desktop {
         @apply mx-16;
@@ -59,7 +62,11 @@ section.bar {
         transition: all 0.2s;
       }
 
-      &:hover {
+      &:hover,
+      &:focus {
+        top: -0.25em;
+        margin-bottom: -0.25em;
+
         svg {
           @apply text-primary;
         }
