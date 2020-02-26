@@ -9,7 +9,11 @@ const autoprefixer = require('autoprefixer');
 
 module.exports = {
   siteName: 'Duane Creates',
-  plugins: [],
+  siteUrl: 'https://duanecreates.com',
+  icon: {
+    favicon: null,
+    touchicon: null,
+  },
   css: {
     loaderOptions: {
       postcss: {

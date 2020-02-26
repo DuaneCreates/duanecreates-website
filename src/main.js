@@ -34,4 +34,55 @@ export default function(Vue, { router, head, isClient }) {
   Vue.component('font-awesome-icon', FontAwesomeIcon);
 
   Vue.use(Vuelidate);
+
+  head.link.push({
+    rel: 'icon',
+    type: 'image/png',
+    sizes: '32x32',
+    href: '/favicon-primary/favicon-32x32.png',
+  });
+
+  head.link.push({
+    rel: 'icon',
+    type: 'image/png',
+    sizes: '16x16',
+    href: '/favicon-primary/favicon-16x16.png',
+  });
+
+  head.link.push({
+    rel: 'manifest',
+    href: '/favicon-primary/site.webmanifest',
+  });
+
+  head.link.push({
+    rel: 'mask-icon',
+    color: '#813feb',
+    href: '/favicon-primary/safari-pinned-tab.svg',
+  });
+
+  head.link.push({
+    rel: 'shortcut icon',
+    href: '/favicon-primary/favicon.ico',
+  });
+
+  head.link.push({
+    rel: 'apple-touch-icon',
+    sizes: '180x180',
+    href: '/favicon-primary/apple-touch-icon.png',
+  });
+
+  head.meta.push({
+    name: 'theme-color',
+    content: '#813feb',
+  });
+
+  head.meta.push({
+    name: 'msapplication-TileColor',
+    content: '#ffffff',
+  });
+
+  head.meta.push({
+    name: 'msapplication-config',
+    content: '/favicon-primary/browserconfig.xml',
+  });
 }
