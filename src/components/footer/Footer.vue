@@ -1,9 +1,9 @@
 <template>
   <footer class="main">
-    <FooterMe></FooterMe>
+    <FooterMe />
     <div class="divider"></div>
-    <FooterAbout></FooterAbout>
-    <FooterBar></FooterBar>
+    <FooterAbout />
+    <FooterBar />
   </footer>
 </template>
 

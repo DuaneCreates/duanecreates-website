@@ -1,9 +1,9 @@
 <template>
   <section class="about">
     <div class="sections">
-      <ColumnSummary></ColumnSummary>
-      <ColumnJourney></ColumnJourney>
-      <ColumnEmail></ColumnEmail>
+      <ColumnSummary />
+      <ColumnJourney />
+      <ColumnEmail />
     </div>
   </section>
 </template>
