@@ -4,11 +4,19 @@
       <h1>Hi There!</h1>
       <p>My blog is currently under construction.</p>
     </div>
+    <div class="newsletter">
+      <ClientOnly>
+        <convertkit />
+      </ClientOnly>
+    </div>
   </Layout>
 </template>
 
 <script>
+import Convertkit from '../components/Convertkit';
+
 export default {
+  components: { Convertkit },
   metaInfo: {
     title: 'Duane Creates',
   },
@@ -17,7 +25,7 @@ export default {
 
 <style lang="scss" scoped>
 .welcome-container {
-  @apply mb-100 p-50;
+  @apply p-50;
 
   @screen tablet-lg {
     @apply p-100;
@@ -29,6 +37,14 @@ export default {
 
   p {
     @apply text-lg;
+  }
+}
+
+.newsletter {
+  @apply mb-100 px-50 py-0;
+
+  @screen tablet-lg {
+    @apply px-100 py-0 mb-200;
   }
 }
 </style>
