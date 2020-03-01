@@ -7,11 +7,11 @@
       <a href="https://twitter.com/DuaneCreates" rel="nofollow">
         <font-awesome-icon :icon="['fab', 'twitter']" />
       </a>
-      <a href="https://github.com/DuaneCreates" rel="nofollow">
-        <font-awesome-icon :icon="['fab', 'github']" />
-      </a>
       <a href="https://www.youtube.com/c/DuaneCreates" rel="nofollow">
         <font-awesome-icon :icon="['fab', 'youtube']" />
+      </a>
+      <a href="https://github.com/DuaneCreates" rel="nofollow">
+        <font-awesome-icon :icon="['fab', 'github']" />
       </a>
     </div>
     <p class="copyright">&copy; 2020 Duane Creates</p>

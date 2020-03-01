@@ -7,10 +7,6 @@
       My skills focus on CSS & JavaScript.<br />I use Vue.js to create awesome
       stuff.<br />Also keen on marketing, SEO, U.I. Design & U.X.
     </p>
-    <g-link to="/about" class="more"
-      ><span>Learn More</span>
-      <font-awesome-icon :icon="['fas', 'chevron-right']" />
-    </g-link>
   </section>
 </template>
 

@@ -13,6 +13,7 @@ module.exports = {
         ignoreAtRules: ['tailwind', 'screen'],
       },
     ],
+    'no-descending-specificity': null,
     'color-no-invalid-hex': true,
     'font-family-no-duplicate-names': true,
     'function-calc-no-invalid': true,

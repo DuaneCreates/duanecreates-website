@@ -3,7 +3,6 @@
     <div class="sections">
       <ColumnSummary />
       <ColumnJourney />
-      <ColumnEmail />
     </div>
   </section>
 </template>
@@ -11,11 +10,10 @@
 <script>
 import ColumnJourney from './ColumnJourney';
 import ColumnSummary from './ColumnSummary';
-import ColumnEmail from './ColumnEmail';
 
 export default {
   name: 'Footer-About',
-  components: { ColumnEmail, ColumnSummary, ColumnJourney },
+  components: { ColumnSummary, ColumnJourney },
 };
 </script>
 
@@ -44,7 +42,7 @@ section.about {
 
     @screen laptop {
       & > section {
-        @apply w-1/3;
+        @apply w-1/2;
       }
     }
   }

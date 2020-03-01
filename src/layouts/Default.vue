@@ -1,6 +1,5 @@
 <template>
   <div class="layout">
-    <Header />
     <slot />
     <Footer />
   </div>
@@ -8,9 +7,8 @@
 
 <script>
 import Footer from '../components/footer/Footer';
-import Header from '../components/Header';
 
 export default {
-  components: { Header, Footer },
+  components: { Footer },
 };
 </script>
