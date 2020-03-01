@@ -21,14 +21,16 @@ module.exports = {
       },
     },
   },
+  plugins: [
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-XXXXXXXXX-X',
+      },
+    },
+  ],
   configureWebpack: {
     plugins: [
-      {
-        use: '@gridsome/plugin-google-analytics',
-        options: {
-          id: 'UA-XXXXXXXXX-X',
-        },
-      },
       new StyleLintPlugin({
         files: ['src/**/*.{vue,scss,css}'],
       }),
