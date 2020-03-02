@@ -14,6 +14,14 @@ module.exports = {
     favicon: null,
     touchicon: null,
   },
+  plugins: [
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: process.env.GRIDSOME_GA_ID,
+      },
+    },
+  ],
   css: {
     loaderOptions: {
       postcss: {
