@@ -28,7 +28,8 @@
     "normalize.css": "^8.0.1",
     "sass-loader": "^8.0.2",
     "tailwindcss": "^1.2.0",
-    "vuelidate": "^0.7.5"
+    "vuelidate": "^0.7.5",
+    "vuex": "^3.1.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-eslint": "^4.2.2",

@@ -18,7 +18,7 @@
       <g-link to="/projects">Projects</g-link>
       <g-link to="/about">About</g-link>
     </nav>
-    <button class="menu">
+    <button class="menu" @click="toggleMenu(true)">
       <font-awesome-icon :icon="['fas', 'bars']" />
     </button>
   </header>
@@ -27,6 +27,11 @@
 <script>
 export default {
   name: 'Header',
+  methods: {
+    toggleMenu(status) {
+      this.$store.commit('SET_MENU_OPENED', status);
+    },
+  },
 };
 </script>
 

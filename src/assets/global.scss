@@ -1,5 +1,9 @@
 body {
   @apply text-primary-dark font-body leading-relaxed;
+
+  &.menu_opened {
+    @apply overflow-y-hidden;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {

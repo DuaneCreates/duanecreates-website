@@ -1,5 +1,6 @@
 <template>
   <div class="layout">
+    <Menu />
     <Header />
     <slot />
     <Footer />
@@ -9,8 +10,16 @@
 <script>
 import Footer from '../components/footer/Footer';
 import Header from '../components/Header';
+import Menu from '../components/Menu';
 
 export default {
-  components: { Header, Footer },
+  components: { Menu, Header, Footer },
+  metaInfo() {
+    return {
+      bodyAttrs: {
+        class: this.$store.state.menu_opened && 'menu_opened',
+      },
+    };
+  },
 };
 </script>

@@ -7,10 +7,15 @@ import '~/assets/base.scss';
 import '~/assets/global.scss';
 import DefaultLayout from '~/layouts/Default.vue';
 import Vuelidate from 'vuelidate';
+import Vuex from 'vuex';
 
 // Icons
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faChevronRight, faBars } from '@fortawesome/free-solid-svg-icons';
+import {
+  faChevronRight,
+  faBars,
+  faTimes,
+} from '@fortawesome/free-solid-svg-icons';
 import {
   faInstagram,
   faTwitter,
@@ -22,13 +27,14 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 library.add(
   faChevronRight,
   faBars,
+  faTimes,
   faInstagram,
   faTwitter,
   faGithub,
   faYoutube,
 );
 
-export default function(Vue, { router, head, isClient }) {
+export default function(Vue, { router, head, isClient, appOptions }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout);
   Vue.component('font-awesome-icon', FontAwesomeIcon);
@@ -84,5 +90,18 @@ export default function(Vue, { router, head, isClient }) {
   head.meta.push({
     name: 'msapplication-config',
     content: '/favicon-primary/browserconfig.xml',
+  });
+
+  Vue.use(Vuex);
+
+  appOptions.store = new Vuex.Store({
+    state: {
+      menu_opened: false,
+    },
+    mutations: {
+      SET_MENU_OPENED(state, opened) {
+        state.menu_opened = opened;
+      },
+    },
   });
 }
