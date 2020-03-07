@@ -57,30 +57,5 @@ section.me {
   p {
     @apply text-primary-dark text-lg font-normal mb-10;
   }
-
-  a.more {
-    @apply text-primary-dark;
-    transition: all 0.2s;
-
-    span {
-      @apply text-lg font-bold;
-    }
-
-    svg {
-      @apply text-lg ml-5 relative;
-      margin-bottom: -2px;
-      left: 0;
-      transition: left 0.2s;
-    }
-
-    &:focus,
-    &:hover {
-      @apply outline-none text-primary;
-
-      svg {
-        left: 0.25em;
-      }
-    }
-  }
 }
 </style>

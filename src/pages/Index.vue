@@ -1,5 +1,16 @@
 <template>
   <Layout>
+    <PostsRow
+      title="Latest Blog Posts"
+      more_text="more blog posts"
+      :posts="[]"
+    />
+    <PostsRow
+      title="Latest Code Notes"
+      more_text="more code notes"
+      :posts="[]"
+    />
+
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
     <g-image alt="Example image" src="~/favicon.png" width="135" />
 
