@@ -50,9 +50,9 @@ article.post-thumbnail {
   @apply w-full;
 
   & > header {
-    @apply bg-primary h-200 w-full border-2 border-b-0 border-primary rounded-t-10 overflow-hidden;
+    @apply bg-primary w-full border-2 border-b-0 border-primary rounded-t-10 overflow-hidden;
     img {
-      @apply object-cover w-full h-full;
+      @apply object-cover w-full h-200;
       transition: all 0.2s;
     }
 
