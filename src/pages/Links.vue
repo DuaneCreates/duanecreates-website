@@ -51,7 +51,16 @@ export default {
     @apply mb-50;
 
     h1 {
-      @apply text-primary-dark uppercase text-xxxl font-bold;
+      @apply text-primary-dark uppercase text-xxxl font-bold relative;
+      transition: all 0.2s;
+
+      &:before {
+        @apply absolute text-primary text-xxxl opacity-0;
+        content: '\2022';
+        left: -0.9em;
+        top: -0.1em;
+        transition: all 0.2s;
+      }
     }
 
     p {
@@ -61,8 +70,14 @@ export default {
     a {
       &:hover,
       &:focus {
+        @apply outline-none;
         h1 {
           @apply text-primary;
+
+          &:before {
+            @apply opacity-100;
+            left: -0.5em;
+          }
         }
       }
     }
