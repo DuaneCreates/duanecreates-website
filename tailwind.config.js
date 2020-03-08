@@ -46,6 +46,11 @@ module.exports = {
       '68': '4.250em',
       '100': '6.25em',
       '120': '7.5em',
+      '200': '12.5em',
+    },
+    borderRadius: {
+      '10': '10px',
+      full: ' 9999px',
     },
     extend: {},
   },

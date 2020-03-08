@@ -10,6 +10,14 @@ h1, h2, h3, h4, h5, h6 {
   @apply font-title leading-snug font-bold;
 }
 
+.page{
+  @apply p-50 bg-white;
+
+  @screen tablet-lg {
+    @apply p-100;
+  }
+}
+
 a.more {
   @apply text-primary-dark;
   transition: all 0.2s;
