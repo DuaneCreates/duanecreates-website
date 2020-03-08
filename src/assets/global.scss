@@ -11,10 +11,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page{
-  @apply p-50 bg-white;
+  @apply px-50 bg-white;
 
   @screen tablet-lg {
-    @apply p-100;
+    @apply px-100;
   }
 }
 

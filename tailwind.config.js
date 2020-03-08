@@ -18,6 +18,7 @@ module.exports = {
       lg: '1.5rem', // 24px
       xl: '1.875rem', // 30px
       xxl: '2.5rem', // 40px
+      xxxl: '3.75rem', // 60px
     },
     colors: {
       'primary-dark': '#0C0E1F',
