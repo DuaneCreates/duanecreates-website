@@ -97,6 +97,7 @@ section.menu {
 
       svg {
         @apply text-primary-dark text-xl;
+        transition: all 0.2s;
       }
 
       &:hover,
@@ -119,6 +120,7 @@ section.menu {
 
     a {
       @apply text-primary-dark text-lg uppercase font-body mb-25 font-bold;
+      transition: all 0.2s;
 
       &:last-of-type {
         @apply mb-0;
@@ -136,6 +138,7 @@ section.menu {
 
     a {
       @apply text-primary-dark text-md font-body mb-10 font-normal;
+      transition: all 0.2s;
 
       &:last-of-type {
         @apply mb-0;

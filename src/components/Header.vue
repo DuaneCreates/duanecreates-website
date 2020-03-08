@@ -49,8 +49,19 @@ header.header {
     @screen tablet-md {
       @apply block;
     }
+
     img {
-      @apply rounded-full h-auto object-contain;
+      @apply rounded-full h-auto object-contain border-2 border-transparent;
+      transition: all 0.2s;
+    }
+
+    &:focus,
+    &:hover {
+      @apply outline-none;
+
+      img {
+        @apply border-2 border-primary shadow-md;
+      }
     }
   }
 
@@ -63,6 +74,7 @@ header.header {
 
     a {
       @apply no-underline font-bold text-md font-body text-primary-dark mx-15;
+      transition: all 0.2s;
 
       &:first-of-type {
         @apply ml-0;
@@ -74,7 +86,7 @@ header.header {
 
       &:hover,
       &:focus {
-        @apply text-primary;
+        @apply text-primary outline-none;
       }
     }
   }
@@ -92,6 +104,7 @@ header.header {
 
     a {
       @apply uppercase no-underline font-bold text-md font-body text-primary-dark mx-15;
+      transition: all 0.2s;
 
       &:first-of-type {
         @apply ml-0;
@@ -107,7 +120,7 @@ header.header {
 
       &:hover,
       &:focus {
-        @apply text-primary;
+        @apply text-primary outline-none;
       }
     }
   }
@@ -116,6 +129,7 @@ header.header {
     @apply ml-auto;
     svg {
       @apply text-primary-dark text-xl;
+      transition: all 0.2s;
     }
 
     &:hover,
