@@ -2,43 +2,49 @@
   <Layout>
     <main class="page">
       <div class="link-container">
-        <div v-for="link in links" :key="link.href" class="link">
-          <g-link :to="link.href" rel="nofollow">
-            <h1>{{ link.title }}</h1>
-            <p v-if="link.description">{{ link.description }}</p>
+        <div
+          v-for="(edge, index) in sortedLinks"
+          :key="edge.node.href"
+          class="link"
+        >
+          <g-link :to="edge.node.href" rel="nofollow">
+            <h1>{{ edge.node.title }}</h1>
+            <p v-if="edge.node.description">{{ edge.node.description }}</p>
           </g-link>
+        </div>
+        <div v-if="$page.links.totalCount === 0">
+          <p>There are no links, yet.</p>
         </div>
       </div>
     </main>
   </Layout>
 </template>
 
+<page-query>
+  query {
+    links: allLink {
+      totalCount
+      edges {
+        node {
+          title
+          description
+          href
+          order
+        }
+      }
+    }
+  }
+</page-query>
 <script>
 export default {
-  data() {
-    return {
-      // TODO dynamic data
-      links: [
-        {
-          title: 'My Youtube Channel',
-          description: 'Clck the link above to go to my YouTube channel.',
-          href: 'https://youtube.com/c/duanecreates',
-        },
-        {
-          title: 'Free eBooks',
-          description: 'Learn a bunch of cool stuff, for free',
-          href: 'https://google.com',
-        },
-        {
-          title: 'My swagger jacket',
-          description: null,
-          href: 'https://google.com/',
-        },
-      ],
-    };
-  },
   metaInfo: {
-    title: 'Hey you!',
+    title: 'Links',
+  },
+  computed: {
+    sortedLinks() {
+      const edges = this.$page.links.edges;
+      return edges.sort((a, b) => (a.node.order > b.node.order ? 1 : -1));
+    },
   },
 };
 </script>

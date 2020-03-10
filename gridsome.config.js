@@ -21,6 +21,13 @@ module.exports = {
         id: process.env.GRIDSOME_GA_ID,
       },
     },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: './src/data/links/**/*.md',
+        typeName: 'Link',
+      },
+    },
   ],
   css: {
     loaderOptions: {
