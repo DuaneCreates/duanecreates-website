@@ -23,7 +23,7 @@ export default {
 
 <style lang="scss" scoped>
 button {
-  @apply text-white bg-primary-dark py-16 px-24 uppercase font-bold font-body;
+  @apply text-white bg-primary-dark py-16 px-24 uppercase font-bold font-body rounded-10;
   transition: all 0.2s;
 
   &:hover,
