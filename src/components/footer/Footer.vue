@@ -20,8 +20,12 @@ export default {
 
 <style lang="scss" scoped>
 footer.main {
-  @apply relative;
-  margin-top: 150px;
+  @apply relative mt-100;
+
+  @screen laptop {
+    @apply mt-200;
+  }
+
   .divider {
     @apply relative overflow-hidden bg-transparent;
     height: 160px;
