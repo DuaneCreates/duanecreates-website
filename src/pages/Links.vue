@@ -53,8 +53,16 @@ export default {
     @apply mb-50;
 
     h1 {
-      @apply text-primary-dark uppercase text-xxxl font-bold relative;
+      @apply text-primary-dark uppercase text-xl font-bold relative;
       transition: all 0.2s;
+
+      @screen laptop {
+        @apply text-xxl;
+      }
+
+      @screen desktop {
+        @apply text-xxxl;
+      }
 
       &:before {
         @apply absolute text-primary text-xxxl opacity-0;
