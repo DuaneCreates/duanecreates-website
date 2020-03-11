@@ -2,16 +2,18 @@
   <Layout>
     <main class="page">
       <div class="link-container">
-        <div
-          v-for="(edge, index) in sortedLinks"
-          :key="edge.node.href"
-          class="link"
-        >
-          <g-link :to="edge.node.href" rel="nofollow">
-            <h1>{{ edge.node.title }}</h1>
-            <p v-if="edge.node.description">{{ edge.node.description }}</p>
-          </g-link>
-        </div>
+        <template v-if="$page.links.totalCount > 0">
+          <div
+            v-for="(edge, index) in $page.links.edges"
+            :key="edge.node.href"
+            class="link"
+          >
+            <g-link :to="edge.node.href" rel="nofollow">
+              <h1>{{ edge.node.title }}</h1>
+              <p v-if="edge.node.description">{{ edge.node.description }}</p>
+            </g-link>
+          </div>
+        </template>
         <div v-if="$page.links.totalCount === 0">
           <p>There are no links, yet.</p>
         </div>
@@ -22,7 +24,7 @@
 
 <page-query>
   query {
-    links: allLink {
+    links: allLink(sortBy: "order", order: ASC) {
       totalCount
       edges {
         node {
@@ -39,12 +41,6 @@
 export default {
   metaInfo: {
     title: 'Links',
-  },
-  computed: {
-    sortedLinks() {
-      const edges = this.$page.links.edges;
-      return edges.sort((a, b) => (a.node.order > b.node.order ? 1 : -1));
-    },
   },
 };
 </script>
