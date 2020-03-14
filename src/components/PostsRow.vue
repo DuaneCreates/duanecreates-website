@@ -2,8 +2,12 @@
   <section class="posts-row">
     <h1>{{ title }}</h1>
     <div class="posts-container">
-      <div class="post-thumbnail-wrapper" v-for="post in posts" :key="post.id">
-        <PostThumbnail :post="post" />
+      <div
+        class="post-thumbnail-wrapper"
+        v-for="post in posts"
+        :key="post.node.slug"
+      >
+        <PostThumbnail :post="post.node" />
       </div>
     </div>
     <g-link to="/" class="more small"

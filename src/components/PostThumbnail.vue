@@ -1,15 +1,16 @@
 <template>
   <article class="post-thumbnail">
     <header>
-      <g-link to="/">
+      <g-link :to="post.path">
         <g-image :src="post.image" fit="cover" :alt="post.title" />
       </g-link>
     </header>
     <div class="body-container">
       <div class="tags-container">
+        <!--TODO link-->
         <g-link v-for="tag in post.tags" :key="tag" to="/">#{{ tag }}</g-link>
       </div>
-      <g-link to="/" class="title">
+      <g-link :to="post.path" class="title">
         <h2>
           {{ post.title }}
         </h2>
@@ -17,13 +18,13 @@
       <p class="summary">{{ post.summary }}</p>
       <footer>
         <p class="date">
-          <g-link to="/">{{ post.date }}</g-link>
+          <g-link :to="post.path">{{ post.date }}</g-link>
         </p>
         <span class="seperator"><span class="disc">&bull;</span></span>
         <p class="read">
-          <g-link to="/">{{ post.read_minutes }} min read</g-link>
+          <g-link :to="post.path">{{ post.read_minutes }} min read</g-link>
         </p>
-        <g-link to="/" class="more small"
+        <g-link :to="post.path" class="more small"
           ><span>read {{ post.type }}</span>
           <font-awesome-icon :icon="['fas', 'chevron-right']" />
         </g-link>
