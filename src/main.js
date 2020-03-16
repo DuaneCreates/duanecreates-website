@@ -106,4 +106,10 @@ export default function(Vue, { router, head, isClient, appOptions }) {
       },
     },
   });
+
+  router.beforeEach((to, from, next) => {
+    appOptions.store.commit('SET_MENU_OPENED', false);
+
+    next();
+  });
 }
