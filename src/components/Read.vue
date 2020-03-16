@@ -16,13 +16,13 @@
           <g-link to="/">{{ post.read_minutes }} min read</g-link>
         </p>
       </section>
-      <div v-html="$page.blogPost.content" />
+      <div v-html="$page.post.content" />
       <section class="tags-container">
-<!--        TODO real tags-->
+        <!--        TODO real tags-->
         <g-link v-for="tag in post.tags" :key="tag" to="/">#{{ tag }}</g-link>
       </section>
       <section class="more-container">
-<!--        TODO more-->
+        <!--        TODO more-->
         <!--<g-link to="/" class="direction">
           <font-awesome-icon :icon="['fas', 'chevron-left']" />
           <h3>Hello World</h3>

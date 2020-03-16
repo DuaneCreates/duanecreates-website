@@ -1,12 +1,12 @@
 <template>
   <Layout>
-    <Read :post="$page.blogPost"/>
+    <Read :post="$page.post" />
   </Layout>
 </template>
 
 <page-query>
-  query BlogPost($path: String!) {
-    blogPost(path: $path) {
+  query Post($path: String!) {
+    post(path: $path) {
       title
       date
       path
@@ -20,9 +20,9 @@
   }
 </page-query>
 <script>
-import Read from "../components/Read";
+import Read from '../components/Read';
 export default {
-  name: 'BlogPost',
-  components: {Read},
+  name: 'Post',
+  components: { Read },
 };
 </script>
