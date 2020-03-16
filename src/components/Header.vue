@@ -8,11 +8,16 @@
       />
     </g-link>
     <nav class="tags">
-      <g-link to="/tags/html">HTML</g-link>
-      <g-link to="/tags/css">CSS</g-link>
-      <g-link to="/tags/javascript">JavaScript</g-link>
+      <g-link
+        v-for="(edge, index) in $static.allTag.edges"
+        :key="edge.node.id"
+        :to="edge.node.path"
+      >
+        #{{ edge.node.id }}
+      </g-link>
     </nav>
     <nav class="main">
+      <!-- TODO links -->
       <g-link to="/blog">Blog</g-link>
       <g-link to="/code-notes">Code Notes</g-link>
       <g-link to="/projects">Projects</g-link>
@@ -34,6 +39,18 @@ export default {
   },
 };
 </script>
+<static-query>
+  query {
+    allTag(limit: 4) {
+      edges {
+        node {
+          id
+          path
+        }
+      }
+    }
+  }
+</static-query>
 
 <style lang="scss" scoped>
 header.header {

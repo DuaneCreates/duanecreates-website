@@ -22,16 +22,20 @@
       </div>
 
       <nav class="main">
+        <!--TODO links-->
         <g-link to="/">Blog</g-link>
         <g-link to="/">Code Notes</g-link>
-        <g-link to="/">Projects</g-link>
-        <g-link to="/">About</g-link>
+        <g-link to="/about">About</g-link>
       </nav>
 
       <nav class="tags">
-        <g-link to="/">#html</g-link>
-        <g-link to="/">#css</g-link>
-        <g-link to="/">#javascript</g-link>
+        <g-link
+          v-for="(edge, index) in $static.allTag.edges"
+          :key="edge.node.id"
+          :to="edge.node.path"
+        >
+          #{{ edge.node.id }}
+        </g-link>
       </nav>
     </section>
   </div>
@@ -47,6 +51,18 @@ export default {
   },
 };
 </script>
+<static-query>
+  query {
+    allTag {
+      edges {
+        node {
+          id
+          path
+        }
+      }
+    }
+  }
+</static-query>
 
 <style lang="scss" scoped>
 .overlay {
