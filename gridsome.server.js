@@ -11,6 +11,14 @@ module.exports = function(api) {
   });
 
   api.createPages(({ createPage }) => {
-    // Use the Pages API here: https://gridsome.org/docs/pages-api/
+    createPage({
+      path: '/browse/blog-posts',
+      component: './src/pages/BrowseBlogPosts.vue',
+    });
+
+    createPage({
+      path: '/browse/code-notes',
+      component: './src/pages/BrowseCodeNotes.vue',
+    });
   });
 };

@@ -1,6 +1,6 @@
 <template>
   <section class="posts-row">
-    <h1>{{ title }}</h1>
+    <h1 v-if="title !== null">{{ title }}</h1>
     <div class="posts-container">
       <div
         class="post-thumbnail-wrapper"
@@ -10,7 +10,7 @@
         <PostThumbnail :post="post.node" />
       </div>
     </div>
-    <g-link to="/" class="more small"
+    <g-link v-if="more_text !== null" to="/" class="more small"
       ><span>{{ more_text }}</span>
       <font-awesome-icon :icon="['fas', 'chevron-right']" />
     </g-link>

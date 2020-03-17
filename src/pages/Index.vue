@@ -57,7 +57,7 @@ import PostsRow from '../components/PostsRow';
 export default {
   components: { PostsRow },
   metaInfo: {
-    title: 'Hey you!',
+    title: 'Index!' /*TODO*/,
   },
 };
 </script>
