@@ -43,6 +43,12 @@ module.exports = {
         typeName: 'Link',
       },
     },
+    {
+      use: '@gridsome/plugin-sitemap',
+      options: {
+        cacheTime: 600000,
+      },
+    },
   ],
   css: {
     loaderOptions: {
