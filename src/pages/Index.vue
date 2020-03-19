@@ -5,12 +5,14 @@
         v-if="$page.blog_posts.totalCount > 0"
         title="Latest Blog Posts"
         more_text="more blog posts"
+        more_link="/browse/blog-posts"
         :posts="$page.blog_posts.edges"
       />
       <PostsRow
         v-if="$page.code_notes.totalCount > 0"
         title="Latest Code Notes"
         more_text="more code notes"
+        more_link="/browse/code-notes"
         :posts="$page.code_notes.edges"
       />
     </main>

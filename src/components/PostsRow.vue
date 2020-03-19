@@ -10,7 +10,7 @@
         <PostThumbnail :post="post.node" />
       </div>
     </div>
-    <g-link v-if="more_text !== null" to="/" class="more small"
+    <g-link v-if="more_text !== null" :to="more_link" class="more small"
       ><span>{{ more_text }}</span>
       <font-awesome-icon :icon="['fas', 'chevron-right']" />
     </g-link>
@@ -19,6 +19,7 @@
 
 <script>
 import PostThumbnail from './PostThumbnail';
+
 export default {
   name: 'PostsRow',
   components: { PostThumbnail },
@@ -32,6 +33,11 @@ export default {
       type: String,
       required: false,
       default: 'More Posts',
+    },
+    more_link: {
+      type: String,
+      required: false,
+      default: '/',
     },
     posts: {
       type: Array,

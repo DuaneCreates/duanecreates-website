@@ -25,7 +25,7 @@
           <g-link :to="post.path">{{ post.read_minutes }} min read</g-link>
         </p>
         <g-link :to="post.path" class="more small"
-          ><span>read {{ post.type }}</span>
+          ><span>read {{ post.type.replace('_', ' ') }}</span>
           <font-awesome-icon :icon="['fas', 'chevron-right']" />
         </g-link>
       </footer>
