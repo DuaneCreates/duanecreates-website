@@ -17,10 +17,8 @@
       </g-link>
     </nav>
     <nav class="main">
-      <!-- TODO links -->
-      <g-link to="/blog">Blog</g-link>
-      <g-link to="/code-notes">Code Notes</g-link>
-      <g-link to="/projects">Projects</g-link>
+      <g-link to="/browse/blog-posts">Blog</g-link>
+      <g-link to="/browse/code-notes">Code Notes</g-link>
       <g-link to="/about">About</g-link>
     </nav>
     <button class="menu" @click="toggleMenu(true)">

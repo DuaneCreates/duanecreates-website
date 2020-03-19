@@ -22,9 +22,8 @@
       </div>
 
       <nav class="main">
-        <!--TODO links-->
-        <g-link to="/">Blog</g-link>
-        <g-link to="/">Code Notes</g-link>
+        <g-link to="/browse/blog-posts">Blog</g-link>
+        <g-link to="/browse/code-notes">Code Notes</g-link>
         <g-link to="/about">About</g-link>
       </nav>
 
