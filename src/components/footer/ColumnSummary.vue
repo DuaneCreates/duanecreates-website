@@ -1,12 +1,13 @@
 <template>
   <section class="me">
     <h3>Hello,<br />I'm <span class="underline">Duane.</span></h3>
-    <h4>Frontend Developer,<br />with passion.</h4>
+    <h4>Web Developer,<br />with passion.</h4>
     <p>I build amazing apps,<br />and help people learn web development.</p>
     <p>
-      My skills focus on CSS & JavaScript.<br />I use Vue.js to create awesome
-      stuff.<br />Also keen on marketing, SEO, U.I. Design & U.X.
+      My main dev skills are CSS & JavaScript.<br />I use Vue.js to create
+      awesome apps.
     </p>
+    <p>Also keen on marketing, SEO, U.I. Design & U.X.</p>
     <g-link to="/about" class="more"
       ><span>Learn More</span>
       <font-awesome-icon :icon="['fas', 'chevron-right']" />

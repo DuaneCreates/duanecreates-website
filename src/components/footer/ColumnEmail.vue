@@ -1,6 +1,6 @@
 <template>
   <section class="email">
-    <h3>Let's discuss something</h3>
+    <h3>Let's discuss</h3>
     <a href="mailto:duanecreates@gmail.com" class="message">
       <p class="title">Send me a message</p>
       <p class="email">duanecreates@gmail.com</p>
