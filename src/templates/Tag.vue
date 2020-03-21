@@ -57,7 +57,7 @@ export default {
           key: 'keywords',
           name: 'keywords',
           content:
-            'web,dev,devs,website,frontend,backend,html,css,js,javascript,fullstack,developer,programming',
+            'web,dev,devs,website,frontend,backend,html,css,js,vue,vuejs,vue.js,tailwind,tailwindcss,javascript,fullstack,developer,programming',
         },
       ],
     };

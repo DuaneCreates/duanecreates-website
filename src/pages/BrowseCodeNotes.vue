@@ -42,7 +42,7 @@ export default {
         key: 'description',
         name: 'description',
         content:
-          'Learn through short posts about HTML, CSS and JavaScript topics. Browse through the code notes posted by Duane Creates.',
+          'Learn through short posts about HTML, CSS, JavaScript, Vue.js & TailwindCSS topics. Browse through the code notes posted by Duane Creates.',
       },
       {
         key: 'author',
@@ -53,7 +53,7 @@ export default {
         key: 'keywords',
         name: 'keywords',
         content:
-          'learn,code,html,css,javascript,js,learn online,learn to code, learning code,learn free,free code,free coding tips,coding tips,code tips',
+          'learn,code,html,css,javascript,vue,vuejs,vue.js,tailwind,tailwindcss,js,learn online,learn to code, learning code,learn free,free code,free coding tips,coding tips,code tips',
       },
     ],
   },

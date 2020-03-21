@@ -65,7 +65,7 @@ export default {
         key: 'description',
         name: 'description',
         content:
-          'Posting about my web developer experiences and project updates for motivation and guidance. Also explaining code to share CSS, HTML, and JavaScript knowledge.',
+          'Posting about my web developer experiences and project updates for motivation and guidance. Also explaining CSS, HTML, JavaScript, Vue.js & TailwindCSS.',
       },
       {
         key: 'author',
@@ -76,7 +76,7 @@ export default {
         key: 'keywords',
         name: 'keywords',
         content:
-          'web developer,duane chetcuti,duane creates,malta,maltese,css,html,js,javascript,website dev,web devs,css3,html5,instagram,social media,marketing,ui design,ui ux,dev,developer,programming,programmer',
+          'web developer,duane chetcuti,duane creates,malta,maltese,css,html,js,vue,vuejs,vue.js,tailwind,tailwindcss,javascript,website dev,web devs,css3,html5,instagram,social media,marketing,ui design,ui ux,dev,developer,programming,programmer',
       },
     ],
   },
