@@ -39,8 +39,28 @@ import PostsRow from '../components/PostsRow';
 export default {
   name: 'Tag',
   components: { PostsRow },
-  metaInfo: {
-    title: 'Index!' /*TODO*/,
+  metaInfo() {
+    return {
+      title: `Browse #${this.$page.tag.title}`,
+      meta: [
+        {
+          key: 'description',
+          name: 'description',
+          content: `Browse through learning material and blog posts based on ${this.$page.tag.title}.`,
+        },
+        {
+          key: 'author',
+          name: 'author',
+          content: 'Duane Creates',
+        },
+        {
+          key: 'keywords',
+          name: 'keywords',
+          content:
+            'web,dev,devs,website,frontend,backend,html,css,js,javascript,fullstack,developer,programming',
+        },
+      ],
+    };
   },
 };
 </script>

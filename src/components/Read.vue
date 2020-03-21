@@ -45,9 +45,6 @@ export default {
       required: true,
     },
   },
-  metaInfo: {
-    title: 'read',
-  },
 };
 </script>
 

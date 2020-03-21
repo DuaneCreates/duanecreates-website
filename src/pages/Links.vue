@@ -41,6 +41,25 @@
 export default {
   metaInfo: {
     title: 'Links',
+    meta: [
+      {
+        key: 'description',
+        name: 'description',
+        content:
+          'Since I can only post one link in my Instagram bio, find my collection of recent important links I want to share with you.',
+      },
+      {
+        key: 'author',
+        name: 'author',
+        content: 'Duane Creates',
+      },
+      {
+        key: 'keywords',
+        name: 'keywords',
+        content:
+          "dev,dev subjects,duane creates,social media,social network,link in bio,duane's links,interesting topics,share,interesting links,share link",
+      },
+    ],
   },
 };
 </script>

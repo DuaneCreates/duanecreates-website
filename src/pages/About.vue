@@ -65,7 +65,22 @@
 <script>
 export default {
   metaInfo: {
-    title: 'About us',
+    title: 'About Duane Chetcuti, known as Duane Creates online',
+    titleTemplate: '%s',
+    meta: [
+      {
+        key: 'description',
+        name: 'description',
+        content:
+          "Duane creates digital experiences which increase business & online growth. Focusing on design, development and marketing, you're one step closer to success.",
+      },
+      {
+        key: 'keywords',
+        name: 'keywords',
+        content:
+          'dev,devs,web developer,web dev,frontend,front end,freelancing,front-end,developer,website dev,website developer,malta,maltese,local,freelance,freelancer,ui design,ui designer,designer,graphic designer,artist,ux,digital,agency,creator,marketing,social media,instagram',
+      },
+    ],
   },
 };
 </script>

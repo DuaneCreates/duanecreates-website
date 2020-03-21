@@ -10,6 +10,7 @@ const autoprefixer = require('autoprefixer');
 module.exports = {
   siteName: 'Duane Creates',
   siteUrl: 'https://duanecreates.com',
+  titleTemplate: '%s ● Duane Creates',
   icon: {
     favicon: null,
     touchicon: null,
