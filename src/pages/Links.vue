@@ -10,8 +10,8 @@
           >
             <a
               :href="edge.node.href"
-              rel="nofollow"
-              :target="edge.node.new_tab ? '_new' : '_self'"
+              :rel="edge.node.rel ? edge.node.rel : 'nofollow'"
+              :target="edge.node.target ? edge.node.target : '_blank'"
             >
               <h1>{{ edge.node.title }}</h1>
               <p v-if="edge.node.description">{{ edge.node.description }}</p>
@@ -35,7 +35,8 @@
           title
           description
           href
-          new_tab
+          rel
+          target
           order
         }
       }
