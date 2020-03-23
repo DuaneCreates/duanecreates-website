@@ -65,16 +65,20 @@ section.read-container {
     @apply text-primary-dark font-normal text-md mt-20 font-body;
   }
 
-  a {
-    @apply border-b border-primary;
+  p,
+  h1,
+  h2 {
+    a {
+      @apply border-b border-primary;
 
-    &:hover,
-    &:focus {
-      @apply border-b-2;
-    }
+      &:hover,
+      &:focus {
+        @apply border-b-2;
+      }
 
-    &:active {
-      @apply border-accent;
+      &:active {
+        @apply border-accent;
+      }
     }
   }
 
