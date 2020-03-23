@@ -1,8 +1,8 @@
 <template>
   <main class="page">
     <section class="read-container">
-      <!--TODO proper text-->
       <h1>{{ post.title }}</h1>
+      <!-- TODO lightbox-->
       <a :href="post.image" class="image-container">
         <g-image :src="post.image" fit="cover" :alt="post.title" />
       </a>

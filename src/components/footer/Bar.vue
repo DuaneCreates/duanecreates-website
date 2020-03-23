@@ -1,16 +1,20 @@
 <template>
   <section class="bar">
     <div class="social-links">
-      <a href="https://www.instagram.com/duanecreates/" rel="nofollow">
+      <a
+        href="https://www.instagram.com/duanecreates/"
+        rel="me"
+        target="_blank"
+      >
         <font-awesome-icon :icon="['fab', 'instagram']" />
       </a>
-      <a href="https://twitter.com/DuaneCreates" rel="nofollow">
+      <a href="https://twitter.com/DuaneCreates" rel="me" target="_blank">
         <font-awesome-icon :icon="['fab', 'twitter']" />
       </a>
-      <a href="https://www.youtube.com/c/DuaneCreates" rel="nofollow">
+      <a href="https://www.youtube.com/c/DuaneCreates" rel="me" target="_blank">
         <font-awesome-icon :icon="['fab', 'youtube']" />
       </a>
-      <a href="https://github.com/DuaneCreates" rel="nofollow">
+      <a href="https://github.com/DuaneCreates" rel="me" target="_blank">
         <font-awesome-icon :icon="['fab', 'github']" />
       </a>
     </div>

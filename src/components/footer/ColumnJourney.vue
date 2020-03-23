@@ -1,21 +1,21 @@
 <template>
   <section class="journey">
     <h3>Follow my journey</h3>
-    <a href="https://www.instagram.com/duanecreates/" class="social-link">
+    <a href="https://www.instagram.com/duanecreates/" class="social-link" target="_blank" rel="me">
       <p class="social">Instagram</p>
       <p class="desc">Where I share my day-to-day experiences.</p>
     </a>
-    <a href="https://twitter.com/DuaneCreates" class="social-link">
+    <a href="https://twitter.com/DuaneCreates" class="social-link" target="_blank" rel="me">
       <p class="social">Twitter</p>
       <p class="desc">Find short-forms of my Instagram posts.</p>
     </a>
-    <a href="https://www.youtube.com/c/DuaneCreates" class="social-link">
+    <a href="https://www.youtube.com/c/DuaneCreates" class="social-link" target="_blank" rel="me">
       <p class="social">YouTube</p>
       <p class="desc">
         Subscribe for dev tutorials, thought processes and journey updates.
       </p>
     </a>
-    <a href="https://github.com/DuaneCreates" class="social-link">
+    <a href="https://github.com/DuaneCreates" class="social-link" target="_blank" rel="me">
       <p class="social">Github</p>
       <p class="desc">Check out my open-source projects</p>
     </a>

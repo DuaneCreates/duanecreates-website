@@ -49,15 +49,17 @@
         <h2>What am I doing?</h2>
         <p>
           I share my day-to-day life as a web developer on
-          <a href="https://instagram.com/duanecreates" rel="nofollow"
+          <a href="https://instagram.com/duanecreates" rel="me" target="_blank"
             >Instagram</a
           >
           and
-          <a href="https://twitter.com/duanecreates" rel="nofollow">Twitter</a>
+          <a href="https://twitter.com/duanecreates" rel="me" target="_blank"
+            >Twitter</a
+          >
           to motivate and guide others. There's an awesome community of
           like-minded people out there; People who want to learn and grow. My
           favourite community is
-          <a href="http://devinitelyhealthy.xyz/" rel="nofollow"
+          <a href="http://devinitelyhealthy.xyz/" rel="nofollow" target="_blank"
             >#devinitelyhealthy</a
           >, which promotes a healthy lifestyle along with learning and
           improving oneself for a better future, where goals are crushed and
@@ -67,11 +69,14 @@
           Recently, I also started learning about game development as it is one
           of my dreams to make games. I am even documenting my journey as a new
           game developer on
-          <a href="https://instagram.com/duanecreatesgames" rel="nofollow"
+          <a
+            href="https://instagram.com/duanecreatesgames"
+            rel="me"
+            target="_blank"
             >Instagram</a
           >
           and
-          <a href="https://twitter.com/duanemakesgames" rel="nofollow"
+          <a href="https://twitter.com/duanemakesgames" rel="me" target="_blank"
             >Twitter</a
           >, so you should check that out if you're interested. I've been
           focusing on pixel art and Unity3d as the game engine of choice.
@@ -85,10 +90,13 @@
         <p>
           The reason why I made this blog is to help as much people as I can. I
           started my journey on
-          <a href="https://instagram.com/duanecreates" rel="nofollow"
+          <a href="https://instagram.com/duanecreates" rel="me" target="_blank"
             >Instagram</a
           >, continued on
-          <a href="https://www.youtube.com/c/duanecreates" rel="nofollow"
+          <a
+            href="https://www.youtube.com/c/duanecreates"
+            rel="me"
+            target="_blank"
             >YouTube</a
           >
           to reach more people, and now this blog! I hope you find my content
