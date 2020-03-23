@@ -65,6 +65,19 @@ section.read-container {
     @apply text-primary-dark font-normal text-md mt-20 font-body;
   }
 
+  a {
+    @apply border-b border-primary;
+
+    &:hover,
+    &:focus {
+      @apply border-b-2;
+    }
+
+    &:active {
+      @apply border-accent;
+    }
+  }
+
   .image-container {
     @apply block mt-20 overflow-hidden;
     img {
