@@ -8,10 +8,14 @@
             :key="edge.node.href"
             class="link"
           >
-            <g-link :to="edge.node.href" rel="nofollow">
+            <a
+              :href="edge.node.href"
+              rel="nofollow"
+              :target="edge.node.new_tab ? '_new' : '_self'"
+            >
               <h1>{{ edge.node.title }}</h1>
               <p v-if="edge.node.description">{{ edge.node.description }}</p>
-            </g-link>
+            </a>
           </div>
         </template>
         <div v-if="$page.links.totalCount === 0">
@@ -31,6 +35,7 @@
           title
           description
           href
+          new_tab
           order
         }
       }
@@ -99,7 +104,8 @@ export default {
     a {
       &:hover,
       &:focus {
-        @apply outline-none;
+        @apply outline-none cursor-pointer;
+
         h1 {
           @apply text-primary;
 
