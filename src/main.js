@@ -5,6 +5,7 @@ import 'normalize.css/normalize.css';
 import '~/assets/tailwind.css';
 import '~/assets/base.scss';
 import '~/assets/global.scss';
+import '~/assets/convertkit.css';
 import DefaultLayout from '~/layouts/Default.vue';
 import Vuelidate from 'vuelidate';
 import Vuex from 'vuex';
@@ -93,6 +94,8 @@ export default function(Vue, { router, head, isClient, appOptions }) {
     name: 'msapplication-config',
     content: '/favicon-primary/browserconfig.xml',
   });
+
+  head.script.push({ src: 'https://f.convertkit.com/ckjs/ck.5.js' });
 
   Vue.use(Vuex);
 
