@@ -373,8 +373,9 @@
 }
 
 .formkit-form[data-uid="d8f18be054"] .formkit-background {
-    background-position: center center;
+    background-position: 50% 30%;
     background-size: cover;
+    background-repeat: no-repeat;
     min-height: 200px;
     
 }
