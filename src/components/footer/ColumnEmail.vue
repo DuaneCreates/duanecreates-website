@@ -1,9 +1,9 @@
 <template>
   <section class="email">
     <h3>Let's discuss</h3>
-    <a href="mailto:duanecreates@gmail.com" class="message">
+    <a href="mailto:hello@duanecreates.com" class="message">
       <p class="title">Send me a message</p>
-      <p class="email">duanecreates@gmail.com</p>
+      <p class="email">hello@duanecreates.com</p>
     </a>
     <h3>Newsletter</h3>
     <ClientOnly>
