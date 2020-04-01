@@ -8,13 +8,10 @@
       </a>
       <section class="info-container">
         <p class="date">
-          <!--          TODO no link?-->
-          <g-link to="/">{{ post.date }}</g-link>
+          {{ post.date }}
         </p>
         <span class="seperator"><span class="disc">&bull;</span></span>
-        <p class="read">
-          <g-link to="/">{{ post.read_minutes }} min read</g-link>
-        </p>
+        <p class="read">{{ post.read_minutes }} min read</p>
       </section>
       <div v-html="$page.post.content" />
       <section class="tags-container">
@@ -152,14 +149,12 @@ section.read-container {
 
     p.date,
     p.read {
-      a {
-        @apply text-primary-dark font-normal text-base;
-        transition: all 0.2s;
+      @apply text-primary-dark font-normal text-base;
+      transition: all 0.2s;
 
-        &:hover,
-        &:focus {
-          @apply text-primary outline-none;
-        }
+      &:hover,
+      &:focus {
+        @apply text-primary outline-none;
       }
     }
 
