@@ -75,7 +75,7 @@ header.header {
       @apply outline-none;
 
       img {
-        @apply border-2 border-primary shadow-md;
+        @apply border-primary shadow-md;
       }
     }
   }
