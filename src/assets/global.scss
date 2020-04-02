@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6 {
   @apply font-title leading-snug font-bold;
 }
 
-.page{
+.page {
   @apply px-50 bg-white;
 
   @screen tablet-lg {
@@ -41,7 +41,7 @@ a.more {
     svg {
       @apply text-base;
       margin-bottom: -1px;
-      }
+    }
   }
 
   &:focus,
@@ -50,6 +50,58 @@ a.more {
 
     svg {
       left: 0.25em;
+    }
+  }
+}
+
+.markdown-body {
+  @apply font-body;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-title border-b-0 text-primary-dark;
+  }
+
+  p {
+    @apply leading-relaxed text-read;
+  }
+
+  blockquote {
+    @apply border-primary;
+
+    p {
+      @apply text-primary italic;
+    }
+
+  }
+
+  img {
+    @apply my-20 object-cover w-full;
+    transition: all 0.2s;
+
+    &:focus,
+    &:hover {
+      @apply outline-none;
+
+      -webkit-filter: contrast(1.4) saturate(1.4);
+    }
+  }
+
+
+  a {
+    @apply border-b border-primary text-primary-dark;
+
+    &:hover,
+    &:focus {
+      @apply border-b-2 no-underline;
+    }
+
+    &:active {
+      @apply border-accent;
     }
   }
 }

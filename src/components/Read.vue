@@ -13,7 +13,7 @@
         <span class="seperator"><span class="disc">&bull;</span></span>
         <p class="read">{{ post.read_minutes }} min read</p>
       </section>
-      <div v-html="$page.post.content" />
+      <div class="markdown-body" v-html="$page.post.content" />
       <section class="tags-container">
         <!--        TODO real tags-->
         <g-link v-for="tag in post.tags" :key="tag" to="/">#{{ tag }}</g-link>
@@ -66,11 +66,12 @@ section.read-container {
   h1,
   h2 {
     a {
-      @apply border-b border-primary;
+      @apply border-b border-primary text-primary-dark;
+      transition: all 0.2s;
 
       &:hover,
       &:focus {
-        @apply border-b-2;
+        @apply border-b-2 no-underline;
       }
 
       &:active {
