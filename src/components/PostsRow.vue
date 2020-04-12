@@ -68,6 +68,7 @@ export default {
 
       @screen desktop {
         @apply w-1/4;
+        max-width: 600px;
       }
     }
   }
