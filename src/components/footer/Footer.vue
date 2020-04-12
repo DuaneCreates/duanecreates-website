@@ -33,13 +33,13 @@ footer.main {
     &:before {
       right: 50%;
       border-right: 1000px solid theme('colors.grey-light');
-      border-left: 1000px solid;
+      border-left: 1000px solid theme('colors.transparent');
     }
 
     &:after {
       left: 50%;
       border-left: 1000px solid theme('colors.grey-light');
-      border-right: 1000px solid;
+      border-right: 1000px solid theme('colors.transparent');
     }
 
     &:before,
