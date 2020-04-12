@@ -11,6 +11,7 @@ module.exports = {
   siteName: 'Duane Creates',
   siteUrl: 'https://duanecreates.com',
   titleTemplate: '%s ● Duane Creates',
+  outputDir: 'public',
   icon: {
     favicon: null,
     touchicon: null,
