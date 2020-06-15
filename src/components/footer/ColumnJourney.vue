@@ -8,7 +8,7 @@
       rel="me"
     >
       <p class="social">Instagram</p>
-      <p class="desc">Where I share my day-to-day experiences.</p>
+      <p class="desc">My developer experiences & findings.</p>
     </a>
     <a
       href="https://twitter.com/DuaneCreates"
@@ -17,7 +17,7 @@
       rel="me"
     >
       <p class="social">Twitter</p>
-      <p class="desc">Find short-forms of my Instagram posts.</p>
+      <p class="desc">Daily progress updates on my indie game.</p>
     </a>
     <a
       href="https://www.youtube.com/c/DuaneCreates"
@@ -27,7 +27,7 @@
     >
       <p class="social">YouTube</p>
       <p class="desc">
-        Subscribe for dev tutorials, thought processes and journey updates.
+        Dev tutorials, thoughts and journey updates.
       </p>
     </a>
     <a
@@ -37,7 +37,7 @@
       rel="me"
     >
       <p class="social">Github</p>
-      <p class="desc">Check out my open-source projects</p>
+      <p class="desc">Open-source projects & collaborations</p>
     </a>
   </section>
 </template>
