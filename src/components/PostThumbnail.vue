@@ -107,10 +107,12 @@ article.post-thumbnail {
     }
 
     & > footer {
-      @apply mt-20 flex flex-row justify-between items-center w-full;
+      @apply mt-20 flex flex-row justify-between items-center flex-wrap w-full;
 
       p.date,
       p.read {
+        @apply mt-5;
+
         a {
           @apply text-primary-dark font-normal text-base;
           transition: all 0.2s;
@@ -122,8 +124,12 @@ article.post-thumbnail {
         }
       }
 
+      p.read {
+        @apply mr-20;
+      }
+
       span.seperator {
-        @apply mx-10 relative;
+        @apply mx-10 relative mt-5;
 
         .disc {
           @apply text-xl absolute text-primary;
@@ -133,7 +139,7 @@ article.post-thumbnail {
       }
 
       .more {
-        @apply ml-auto;
+        @apply ml-auto mt-5;
       }
     }
   }
