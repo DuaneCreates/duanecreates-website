@@ -2,11 +2,10 @@
   <Layout>
     <main class="page">
       <section class="about-container">
-        <!--TODO proper images-->
         <h1>About Duane Creates</h1>
         <a href="" class="image-container">
           <g-image
-            src="https://placeimg.com/640/480/people"
+            src="/images/duane chetcuti creates web dev - indie game developer - malta valletta.jpg"
             fit="cover"
             alt="Duane Creates"
           />
@@ -41,7 +40,7 @@
         </h2>
         <a href="" class="image-container">
           <g-image
-            src="https://placeimg.com/640/480/arch"
+            src="/images/beautiful malta valletta city - underneath the fortress.jpg"
             fit="cover"
             alt="Duane Creates"
           />
