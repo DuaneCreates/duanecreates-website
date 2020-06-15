@@ -19,24 +19,24 @@
           development, design, and social media marketing.
         </p>
         <p>
-          I graduated my BSc (Hons) in Software Development from MCAST in 2018.
-          I've been working with several companies locally since before that. I
-          learned most of what I know through solo projects out of my own
-          initiative and self interest. I've worked with teams of different
-          sizes and have been exposed to all phases and parts of a software
-          project.
+          I graduated my BSc (Hons) in Software Development from MCAST, Malta,
+          in 2018. I've been working with several companies locally since before
+          that. I learned most of what I know through solo projects out of my
+          own initiative and self interest, and also by working with companies
+          in various industries. I've worked with teams of different sizes and
+          have been exposed to all phases and parts of a software project.
         </p>
         <p>
-          As my experience grew, I started to appreciate the frontend of a
-          software project more. I love building visually, and I think it is
-          super important that an app is not only beautiful to look at, but also
+          As my experience grew, I started to appreciate the frontend of a web
+          project more. I love building visually, and I think it is super
+          important that an app is not only beautiful to look at, but also
           usable by different kinds of people. This led me to work mostly on the
           frontend when working in teams, and full-stack on solo or freelance
           projects.
         </p>
         <h2>
-          I'm based on a 316 km² rock in the mediterranean called Malta. Great
-          weather, and an awesome life.
+          I'm based on a 316 km² rock in the Mediterranean called Malta. Great
+          weather, country, and life.
         </h2>
         <a href="" class="image-container">
           <g-image
@@ -45,17 +45,14 @@
             alt="Duane Creates"
           />
         </a>
-        <h2>What am I doing?</h2>
+        <h2>What am I currently doing?</h2>
         <p>
-          I share my day-to-day life as a web developer on
+          I share my progress, experiences and findings as a web developer and
+          aspiring independent game developer on
           <a href="https://instagram.com/duanecreates" rel="me" target="_blank"
             >Instagram</a
           >
-          and
-          <a href="https://twitter.com/duanecreates" rel="me" target="_blank"
-            >Twitter</a
-          >
-          to motivate and guide others. There's an awesome community of
+          to inspire, motivate and guide others. There's an awesome community of
           like-minded people out there; People who want to learn and grow. My
           favourite community is
           <a href="http://devinitelyhealthy.xyz/" rel="nofollow" target="_blank"
@@ -65,20 +62,13 @@
           ambitions are fulfilled.
         </p>
         <p>
-          Recently, I also started learning about game development as it is one
-          of my dreams to make games. I am even documenting my journey as a new
-          game developer on
-          <a
-            href="https://instagram.com/duanecreatesgames"
-            rel="me"
-            target="_blank"
-            >Instagram</a
-          >
-          and
-          <a href="https://twitter.com/duanemakesgames" rel="me" target="_blank"
+          Recently, I started learning about game development as it is one of my
+          dreams to make games and become an independent game dev. I am even
+          documenting my journey and progress of my first video game project on
+          <a href="https://twitter.com/duanecreates" rel="me" target="_blank"
             >Twitter</a
           >, so you should check that out if you're interested. I've been
-          focusing on pixel art and Unity3d as the game engine of choice.
+          focusing on low poly 3D and Unity3d as the game engine of choice.
         </p>
         <p>
           When I'm offline, I like reading books. Books can teach you a lot, as
@@ -87,11 +77,8 @@
           have a few favourite ones and others which are in my reading list.
         </p>
         <p>
-          The reason why I made this blog is to help as much people as I can. I
-          started my journey on
-          <a href="https://instagram.com/duanecreates" rel="me" target="_blank"
-            >Instagram</a
-          >, continued on
+          The reason why I made this blog is to help as much people as I can.
+          That's why I'm also on
           <a
             href="https://www.youtube.com/c/duanecreates"
             rel="me"
@@ -151,9 +138,11 @@ section.about-container {
   h1 {
     @apply text-primary-dark font-bold text-xxl font-title;
   }
+
   h2 {
     @apply text-primary-dark font-bold text-xl mt-20 font-title;
   }
+
   p {
     @apply text-primary-dark font-normal text-md mt-20 font-body;
   }
