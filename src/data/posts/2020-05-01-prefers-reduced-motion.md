@@ -6,7 +6,7 @@ slug: "media-query-prefers-reduced-motion"
 summary: "Animations are cool, but for some people it's a problem. No worries, there's a CSS solution!"  
 tags: ["css", "accessibility"]  
 image: "/images/media-query-prefers-reduced-motion.jpg"
-read_minutes: "3"
+read_minutes: "2"
 type: "code_note"
 ---
 
