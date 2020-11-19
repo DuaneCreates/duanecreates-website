@@ -10,11 +10,9 @@
 
 <script>
 import { email, required } from 'vuelidate/lib/validators';
-import Button from '../Button';
 
 export default {
   name: 'Column-Email',
-  components: { Button },
   data() {
     return {
       subscription: {

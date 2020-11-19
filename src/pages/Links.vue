@@ -4,7 +4,7 @@
       <div class="link-container">
         <template v-if="$page.links.totalCount > 0">
           <div
-            v-for="(edge, index) in $page.links.edges"
+            v-for="edge in $page.links.edges"
             :key="edge.node.href"
             class="link"
           >
