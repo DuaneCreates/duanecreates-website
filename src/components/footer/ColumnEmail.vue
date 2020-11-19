@@ -5,21 +5,14 @@
       <p class="title">Send me a message</p>
       <p class="email">hello@duanecreates.com</p>
     </a>
-    <h3>Newsletter</h3>
-    <ClientOnly>
-      <Convertkit />
-    </ClientOnly>
   </section>
 </template>
 
 <script>
 import { email, required } from 'vuelidate/lib/validators';
-import Button from '../Button';
-import Convertkit from '../Convertkit';
 
 export default {
   name: 'Column-Email',
-  components: { Convertkit, Button },
   data() {
     return {
       subscription: {

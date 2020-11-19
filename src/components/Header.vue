@@ -9,7 +9,7 @@
     </g-link>
     <nav class="tags">
       <g-link
-        v-for="(edge, index) in $static.allTag.edges"
+        v-for="edge in $static.allTag.edges"
         :key="edge.node.id"
         :to="edge.node.path"
       >

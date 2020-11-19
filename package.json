@@ -7,12 +7,6 @@
     "explore": "gridsome explore",
     "lint": "vue-cli-service lint --fix & stylelint ./src/**/*.{vue,scss,css} --fix"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn lint",
-      "pre-push": "yarn lint"
-    }
-  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
     "@fortawesome/free-brands-svg-icons": "^5.12.1",
@@ -42,7 +36,6 @@
     "eslint-plugin-gridsome": "^1.4.0",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-vue": "^6.1.2",
-    "husky": "^4.2.2",
     "prettier": "^1.19.1",
     "stylelint": "^13.1.0",
     "stylelint-config-recommended-scss": "^4.2.0",

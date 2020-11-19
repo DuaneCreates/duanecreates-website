@@ -3,7 +3,7 @@
     <main class="page">
       <section class="about-container">
         <h1>About Duane Creates</h1>
-        <a href="" class="image-container">
+        <a class="image-container">
           <g-image
             src="/images/duane chetcuti creates web dev - indie game developer - malta valletta.jpg"
             fit="cover"
@@ -38,7 +38,7 @@
           I'm based on a 316 km² rock in the Mediterranean called Malta. Great
           weather, country, and life.
         </h2>
-        <a href="" class="image-container">
+        <a class="image-container">
           <g-image
             src="/images/beautiful malta valletta city - underneath the fortress.jpg"
             fit="cover"
@@ -166,6 +166,7 @@ section.about-container {
 
   .image-container {
     @apply block mt-20 overflow-hidden;
+
     img {
       @apply object-cover w-full h-300;
       transition: all 0.2s;
